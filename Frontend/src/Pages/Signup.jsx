@@ -28,7 +28,7 @@ function Signup() {
             return handleError('Name, email and password are required')
         }
         try {
-            const url = "BACKEND_API/auth/signup"; 
+            const url = "https://developer-trainee-euj8.vercel.app/auth/signup"; 
             const response = await fetch(url, {
                 method: "POST",
                 headers: {

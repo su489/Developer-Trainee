@@ -12,7 +12,7 @@ const UpdateUser = () => {
   const { id } = useParams();
   // data fetching single
   const fetchSingleUser = async () => {
-    const res = await axios.get(`BACKEND_API/api/read/${id}`);
+    const res = await axios.get(`https://developer-trainee-euj8.vercel.app/api/read/${id}`);
     console.log(res);
     setInputUser({
       name: res.data.name,

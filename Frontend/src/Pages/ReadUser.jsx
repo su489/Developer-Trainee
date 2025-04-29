@@ -7,7 +7,7 @@ const ReadUser = () => {
   // data fetching all
   const [userData, setUserData] = useState([]);
   const fetchSingleUser = async () => {
-    const res = await axios.get(`BACKEND_API/api/read/${id}`);
+    const res = await axios.get(`https://developer-trainee-euj8.vercel.app/api/read/${id}`);
     console.log(res);
     setUserData(res.data);
   };
