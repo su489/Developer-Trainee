@@ -12,7 +12,7 @@ const UpdateUser = () => {
   const { id } = useParams();
   // data fetching single
   const fetchSingleUser = async () => {
-    const res = await axios.get(`http://localhost:8080/api/read/${id}`);
+    const res = await axios.get(`BACKEND_API/api/read/${id}`);
     console.log(res);
     setInputUser({
       name: res.data.name,
@@ -34,7 +34,7 @@ const UpdateUser = () => {
     event.preventDefault();
     console.log(inputUser);
     const res = await axios.put(
-      `http://localhost:8080/api/updateuser/${id}`,
+      `BACKEND_API/api/updateuser/${id}`,
       inputUser
     );
     console.log(res);

@@ -27,7 +27,7 @@ function Login() {
             return handleError('Email and password are required');
         }
         try {
-            const url = "http://localhost:8080/auth/login" // Add your API URL here
+            const url = "BACKEND_API/auth/login" // Add your API URL here
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
